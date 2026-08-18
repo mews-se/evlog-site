@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EVLog — Support</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<h1>Support</h1>
+<p class="lede">EVLog is a free, unofficial iPhone client for TeslaMate.</p>
+
+<p>It reads drives, charges, statistics and battery health from your own instance and shows them on
+the phone. It connects only to servers you run yourself.</p>
+
+<h2>Requirements</h2>
+
+<ul>
+  <li>A running TeslaMate instance</li>
+  <li>teslamateapi reachable from your phone — the app's main data source</li>
+  <li>Optionally Grafana, used for the visited-places map, battery health and a few queries the API
+      does not expose</li>
+  <li>Optionally a Tessie API key, only to fill in charging costs TeslaMate never records</li>
+</ul>
+
+<p>All addresses are configured under Settings in the app. The defaults point at a LAN address and
+will need changing.</p>
+
+<h2>Common questions</h2>
+
+<p><strong>The app cannot reach my server.</strong> Check that teslamateapi answers from the phone's
+network, and that the address in Settings includes the port. On a plain HTTP address, iOS will ask
+for permission to access devices on the local network the first time.</p>
+
+<p><strong>Some charging costs are missing.</strong> TeslaMate never receives Supercharger costs
+from Tesla. They can be entered manually in TeslaMate, or filled in automatically if you add a
+Tessie API key in Settings.</p>
+
+<p><strong>The visited-places map and battery health are empty.</strong> Both read from Grafana
+rather than teslamateapi. Add your Grafana address in Settings.</p>
+
+<h2>Questions and bug reports</h2>
+
+<p><a href="mailto:evlog@notmydomain.org">evlog@notmydomain.org</a></p>
+
+<nav>
+  <a href="../">EVLog</a>
+  <a href="../privacy/">Privacy Policy</a>
+</nav>
+
+<footer>
+This app is an unofficial community tool and is not affiliated with, endorsed by, or supported by
+the official TeslaMate project.
+</footer>
+
+</body>
+</html>

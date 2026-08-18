@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EVLog</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>EVLog</h1>
+<p class="lede">A native iPhone client for your own TeslaMate server.</p>
+
+<p>EVLog reads the data your TeslaMate instance has already collected — drives, charges,
+statistics and battery health — and gives it an interface built for the phone, rather than a
+dashboard squeezed onto a small screen.</p>
+
+<p>It talks only to servers you run yourself. It never connects to Tesla, there is no account to
+create, no service in between, and nothing leaves your network.</p>
+
+<h2>What you need</h2>
+<ul>
+  <li>A running <a href="https://github.com/teslamate-org/teslamate">TeslaMate</a> instance</li>
+  <li><a href="https://github.com/tobiasehlert/teslamateapi">teslamateapi</a> reachable from your
+      phone — the app's main data source</li>
+  <li>Optionally Grafana, used for the visited-places map, battery health and a few queries the
+      API does not expose</li>
+  <li>Optionally a Tessie API key, only to fill in charging costs TeslaMate never records</li>
+</ul>
+
+<nav>
+  <a href="privacy/">Privacy Policy</a>
+  <a href="support/">Support</a>
+</nav>
+
+<footer>
+This app is an unofficial community tool and is not affiliated with, endorsed by, or supported by
+the official TeslaMate project.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EVLog — Privacy Policy</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="updated">EVLog · last updated 18 August 2026</p>
+
+<p><strong>EVLog does not collect any data.</strong></p>
+
+<p>The app has no user accounts, no analytics, no advertising, no crash reporting and no
+third-party SDKs. The developer receives nothing about you or your car, because there is no server
+belonging to the developer for anything to be sent to.</p>
+
+<h2>What the app connects to</h2>
+
+<p>EVLog connects only to addresses you enter yourself in Settings — your own TeslaMate instance
+(teslamateapi, and optionally Grafana and the TeslaMate web interface).</p>
+
+<p>Two exceptions, both optional and both limited:</p>
+
+<ul>
+  <li><strong>supercharge.info</strong> — a public list of Supercharger locations is downloaded for
+      the range map. No information about you or your car is sent with the request.</li>
+  <li><strong>Tessie (tessie.com)</strong> — only if you choose to enter a Tessie API key, and only
+      to retrieve charging costs for your own vehicle.</li>
+</ul>
+
+<p>Maps are drawn with Apple's MapKit, so iOS makes its own requests to Apple for map data. Those
+are covered by Apple's privacy policy.</p>
+
+<h2>What is stored on your device</h2>
+
+<p>Your server addresses, your choice of car, your language preference and — if you enter one —
+your Tessie API key are stored in the app's own storage on your iPhone. They stay on the device,
+are included in your device backups, and are deleted when you delete the app. The Supercharger
+list is cached for a week in the app's cache directory.</p>
+
+<h2>Local network access</h2>
+
+<p>iOS asks for permission to reach devices on your local network. EVLog needs it for the ordinary
+case of a TeslaMate server running on your own network. It is used for nothing else, and the app
+does not scan the network.</p>
+
+<h2>Location</h2>
+
+<p>EVLog does not use your iPhone's location services. The positions shown on maps come from your
+own TeslaMate database.</p>
+
+<h2>Children</h2>
+
+<p>The app is not directed at children, and collects nothing from anyone.</p>
+
+<h2>Changes</h2>
+
+<p>Any change to this policy will be published on this page with a new date.</p>
+
+<h2>Contact</h2>
+
+<p><a href="mailto:evlog@notmydomain.org">evlog@notmydomain.org</a></p>
+
+<nav>
+  <a href="../">EVLog</a>
+  <a href="../support/">Support</a>
+</nav>
+
+<footer>
+This app is an unofficial community tool and is not affiliated with, endorsed by, or supported by
+the official TeslaMate project.
+</footer>
+
+</body>
+</html>
