@@ -20,6 +20,19 @@ in steps. Between the steps the work is visible on
 <p>The <a href="https://github.com/mews-se/evlog-ios/milestones">open milestone</a> lists what the
 next version is meant to carry.</p>
 
+<h2>3.0.1 — 30 August 2026</h2>
+
+<p><a href="https://apps.apple.com/app/evlog/id6802532911">On the App Store</a>
+and tagged <a href="https://github.com/mews-se/evlog-ios/releases/tag/v3.0.1">v3.0.1</a> on GitHub.</p>
+
+<p>Battery health is now estimated with EVLog's own method. Earlier versions built the figure on a
+query borrowed from TeslaMate's Grafana dashboards; 3.0.1 replaces it with an estimator written for
+the app. It takes one reading from the end of every completed charge, scaled to a full battery,
+treats the best readings as the battery when new and the average of the most recent ones as the
+battery today, and derives capacity from range. Degradation, capacity and range can therefore shift
+slightly compared with 3.0 — the estimator changed, not your battery. Nothing else changed in this
+version.</p>
+
 <h2>3.0 — 30 August 2026</h2>
 
 <p><a href="https://apps.apple.com/app/evlog/id6802532911">On the App Store</a>
