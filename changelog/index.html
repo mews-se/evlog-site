@@ -20,6 +20,27 @@ in steps. Between the steps the work is visible on
 <p>The <a href="https://github.com/mews-se/evlog-ios/milestones">open milestone</a> lists what the
 next version is meant to carry.</p>
 
+<h2>3.3 — 18 September 2026</h2>
+
+<p><a href="https://apps.apple.com/app/evlog/id6802532911">On the App Store</a>
+and tagged <a href="https://github.com/mews-se/evlog-ios/releases/tag/v3.3">v3.3</a> on GitHub.</p>
+
+<p>The overview's row of status glyphs gains one for the battery heater: red heat waves, right
+after the preconditioning fan, while the heater is running. It comes from the last position
+TeslaMate stored, within the past ten minutes, and stays hidden when the car is asleep or offline,
+since a reading from before it dozed off says nothing about now. The battery page, which opens
+from Degradation on the overview, grows two charts under its tiles. Capacity over mileage plots one
+reading per finished charge — the rated range at its end, scaled to a full battery and turned into
+capacity — against the odometer, in kilometres or miles, with a dashed line for the capacity when
+new and a median line through the nearest readings, so a slope shows through the noise. It appears
+once there are a handful of charges to plot. Below it, two tiles give the share of time the battery
+has spent above 80 % and below 20 %, and Time at each charge level draws the whole distribution as
+a histogram in steps of five percent, orange outside the twenty to eighty band and blue inside it.
+Every stored level counts until the next reading, so a parked car counts for the level it sat at,
+and a charge that stops at 80 lands in the bar that ends at 80, not in the one above it. The demo
+mode shows the heater glyph and carries data for both charts, so all of it can be seen without a
+server.</p>
+
 <h2>3.2 — 11 September 2026</h2>
 
 <p><a href="https://apps.apple.com/app/evlog/id6802532911">On the App Store</a>
