@@ -20,6 +20,38 @@ in steps. Between the steps the work is visible on
 <p>The <a href="https://github.com/mews-se/evlog-ios/milestones">open milestone</a> lists what the
 next version is meant to carry.</p>
 
+<h2>3.4 — 13 October 2026</h2>
+
+<p><a href="https://apps.apple.com/app/evlog/id6802532911">On the App Store</a>
+and tagged <a href="https://github.com/mews-se/evlog-ios/releases/tag/v3.4">v3.4</a> on GitHub.</p>
+
+<p>Statistics gains a fourth choice next to Week, Month and Year. Custom takes a start and an
+end date, set to the last seven days to begin with, and shows the total for those whole days
+right below the pickers, with the same figures as the other rows: distance, energy added, cost,
+drives, charges, driving time and efficiency. The row opens the same period view as the others,
+broken down by day, or by month once the span is longer than two months, and a day still opens
+that day's drives. The end date cannot pass today and the start cannot pass the end, so a holiday
+or a road trip adds up without summing day rows by hand. A charge's page gets a card between the
+tiles and the charge curve that says what set the pace, with the figures behind each line. On
+AC it sets the current the charger offered against the current the car drew, with the phases and
+the voltage, so a slow charge reads as, say, a box offering 16 A on one phase; the phase count is
+worked out from the power the current and voltage make up, since some cars report two phases on
+three. On either kind of charge it names a battery that started cold, the battery heater when
+it ran for half the charge or more or while the power was held back, and a charger that gave
+too little power to heat the battery. On DC it also names a start above half full, where the
+car itself holds the power back, and stops where charging paused and started again, with how
+long it stood still. When none of that shows in the log, it says that nothing stands out. Away
+from the network your server lives on, every request used to wait out a fifteen-second timeout,
+and each tab found that out on its own. The app now asks each server address once, giving it
+three seconds to answer, and when nothing answers the tabs say within moments that the server
+can't be reached from here; a list that loses the server halfway through stops at once instead
+of waiting out three more timeouts. The answer holds until the app goes to the background,
+or until Try again, a pull to refresh or Test connection in Settings asks again. Tessie and
+the Supercharger list live on the internet and are not part of the check. When the Timeline
+can't load, its period row now stays at the top under the segment, with the message below it,
+instead of sitting in the middle of the screen. The demo mode's charges carry the new fields,
+so the card can be seen without a server.</p>
+
 <h2>3.3 — 18 September 2026</h2>
 
 <p><a href="https://apps.apple.com/app/evlog/id6802532911">On the App Store</a>
